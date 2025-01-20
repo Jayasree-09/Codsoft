@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>My Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            font-family: 'Arial',sans-serif;
+        }
+        body{
+            line-height: 1.6;
+            color: #333;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            background: #baedde;
+        }
+        .header{
+            background: teal;
+            color: #fff;
+            padding:10px 20px;
+
+        }
+        .navbar{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links li{
+            display: inline;
+        }
+        .nav-links{
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        .hero{
+            text-align: center;
+            background-color: rgb(93, 183, 228);
+            color:#fff;
+            padding: 100px 20px;
+
+        }
+        .hero span{
+            color: #e6db8f;
+            font-weight: bold;
+        }
+        .about{
+            padding: 50px 20px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+        .skills{
+            padding: 50px 20px;
+            background: #fff;
+            text-align: center;
+        }
+        .skills-container{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .skill{
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 30%;
+            border-radius: 5px;
+            background-color: rgb(209, 241, 220);
+        }
+        .projects{
+            padding: 50px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+        .project-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project-card{
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 30%;
+            border-radius: 5px;
+            background-color: rgb(173, 223, 234);
+        }
+        .contact{
+            padding: 50px 20px;
+            background: #fff;
+            text-align: center;
+        }
+        .contact-form{
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .footer{
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        </style>
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <div class=""logo>My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+        </header>
+        <section id="hero" class="hero">
+            <h1>Hi,I'm <span> Jayasree</span></h1>
+            <p>A passionate tech student.</p>
+            <a href="#contact" class="btn"></a>
+            </section>
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <p>I am a passionate and driven tech student with a strong interest in software development, problem solving, 
+                    and innovation. I am always eager to learn new technologies and apply them to real world projects, aiming to 
+                    continuously grow and contribute to the tech community. </p>
+            <section id="skills" class="skills">
+                <h2>My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill">
+                        <h3>Frontend</h3>
+                        <p>HTML,CSS,Java Script</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Backend</h3>
+                        <p>Python,C++,SQL</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Tools</h3>
+                        <p>Git,Canva,Figma</p>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="Projects">
+                <h2>My Projects</h2>
+                <div class="project-list">
+                    <div class="project-card">
+                        <h3>Project 1</h3>
+                        <h4>Parking Management System</h4>
+                        <img src="p1.jpg" width="350px" height="250px">
+                        <p> The Parking Management System thet helps to manage a parking lot by tracking vehicles thet park and exit.
+                        It allows users to park a vehicle,remove a vehicle,view currently parked vehicles, and check parking availability.
+                        The system uses a class to manage parkng spots and stores vehicles details in a dictionary.It provides an interactive 
+                        menu for users to perform these operations.This project demonstrates basic python concepts like classes, dictionaries, 
+                        and conditionals.
+                        </p>
+                        </div>
+                        <div class="project-card">
+                        <h3>Project 2</h3>
+                        <h4>Movie Recommendation System</h4>
+                        <img src="p2.jpeg" width="350px" height="250px">
+                        <p>The Movie Recommendation System in C++ and Sql suggests pesonalised movie recommendations based on user ratings 
+                        and preferences.It uses SQL to store movie data and user ratings,While C++ handles the recommendation logic using 
+                        collaborative or content-based filtering.User can rate movies, and the system recommends films based on similar user 
+                        preferences or movie features .It demonstrate database managment and recommendation algorithms.</p>
+                        </div>
+                        <div class="project-card">
+                        <h3>Project 3</h3>
+                        <h4>Health Management System</h4>
+                        <img src="p3.webp" width="350px" height="250px">
+                        <p>Several times,people fail to get the appropriate treatment due to multiple reasons.Once this system gets fed with 
+                        the symptoms and details of certified medical practitioners,it will automatically give reference of the suitable 
+                        medical practitioner. The users can connect with the experts online through the platform.It is an efficient and 
+                        practical way of simplifying health managment.</p>
+                        </div>
+                    </div>
+                </section>
+                <br><br>
+                <footer>
+                    <h3>Contact</h3>
+                        <centre>
+                            <p>Email: deepa123@gmail.com</p>
+                            <p>phone: 9127928646</p>
+                        </centre>
+                    </footer>
+</body>
+</html>
